@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/flContainer"></FrameLayout>
+    <android.support.v4.app.FragmentTabHost
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbHost"></android.support.v4.app.FragmentTabHost>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgTab"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:drawableTop="@mipmap/toolbar_menu_normal"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:drawableTop="@drawable/bg_editor_home_selector"
+            android:button="@null"
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:gravity="center"
+            android:drawableTop="@mipmap/toolbar_refresh_normal"
+            android:button="@null"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>
